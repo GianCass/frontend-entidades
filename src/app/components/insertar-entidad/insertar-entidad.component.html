@@ -1,0 +1,14 @@
+<h2>Insertar Entidad</h2>
+<form (submit)="insertar(); $event.preventDefault()">
+  <label for="nit">NIT:</label>
+  <input id="nit" [(ngModel)]="entidad.nit" name="nit" required>
+  <br>
+  <label for="nombre">Nombre:</label>
+  <input id="nombre" [(ngModel)]="entidad.nombre" name="nombre" required>
+  <br>
+  <button type="submit">Insertar</button>
+</form>
+<p>{{ mensaje }}</p>
+
+
+<p>Insertar entidad funciona!</p>
